@@ -1,0 +1,15 @@
+def vision_df(list_df):
+    for i in list_df:
+        print('----------------------------DataFrame---------------------------------')
+        print()
+        print('Info', i.info())
+        print()
+        print()
+        for col in i.columns:
+            print(f'Duplicate in {col}: {i[col].duplicated().sum()}')
+        print()
+        display(i.head())
+        print('------------------------------------------------------------------------')
+        print('------------------------------------------------------------------------')
+        
+list_df = [df1, df2, df3] #list of datafreame
