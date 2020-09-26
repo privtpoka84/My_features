@@ -1,6 +1,7 @@
 def vision_df(list_df):
+    cnt = 1
     for i in list_df:
-        print('----------------------------DataFrame---------------------------------')
+        print('----------------------------DataFrame ', cnt, '-------------------------------')
         print()
         print('Info', i.info())
         print()
@@ -11,5 +12,6 @@ def vision_df(list_df):
         display(i.head())
         print('------------------------------------------------------------------------')
         print('------------------------------------------------------------------------')
+        cnt += 1
         
 list_df = [df1, df2, df3] #list of datafreame
